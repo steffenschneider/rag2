@@ -16,7 +16,7 @@ index_path      = "C:/Users/Steffen/code/rag2/cache/index.faiss"
 chunk_token_limit = 500  # Number of tokens per chunk
 chunk_overlap = 50       # Overlap in tokens between chunks
 retrieval_k = 10         # Number of similar chunks to retrieve
-model_name = "gpt-4"     #"all-MiniLM-L6-v2"
+model_name = "all-MiniLM-L6-v2"
 
 # ----------------------- Helper Functions -----------------------
 
