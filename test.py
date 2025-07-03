@@ -89,7 +89,7 @@ while True:
             {"role": "system", "content": "You are an expert assistant. Use the following context to answer the question as clearly and accurately as possible."},
             {"role": "user", "content": f"Context:\n{context}\n\nQuestion:\n{query}"}
         ],
-        temperature=0.1,
+        temperature=0.0,
         max_tokens=512
     )
 
