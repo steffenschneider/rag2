@@ -1,3 +1,6 @@
+# one question costs about 18 cents with gpt-4, 5000 token
+# gpt-4-turbo is cheaper
+
 # pip install openai sentence-transformers faiss-cpu tiktoken
 import os
 import openai
@@ -25,7 +28,7 @@ def load_api_key(path):
         return f.read().strip()
 
 def tokenize_text(text, max_tokens=chunk_token_limit, overlap=chunk_overlap):
-    enc = tiktoken.encoding_for_model("gpt-4")
+    enc = tiktoken.encoding_for_model("gpt-4-turbo")
     tokens = enc.encode(text)
     chunks = []
 
